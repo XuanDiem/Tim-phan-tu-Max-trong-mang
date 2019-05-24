@@ -27,16 +27,17 @@ public class TimGiaTriMax {
             System.out.print(array[j] + "\t");
         }
         int max = array[0];
-        int index = 1;
-        for (int j = 0; j < array.length; j++) {
-            if (array[j] > max) {
-                max = array[j];
-                index = j + 1;
+        int index = 0;
+        for (int a = 1; a < array.length; a++) {
+            if (array[a] > max) {
+                max = array[a];
+
+                index = a;
             }
         }
         System.out.println();
         System.out.println("Phan tu co gia tri lon nhat cua mang array la: " + max);
-        System.out.println("Co vi tri trong mang array la :" + index);
+        System.out.println("Co chi so trong mang array la :" + index);
 
 
     }
